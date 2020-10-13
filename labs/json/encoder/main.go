@@ -14,10 +14,10 @@ type Data struct {
 func main() {
 	var file, _ = os.Create("data.txt")
 	data := []Data{
-		Data{10, 20},
-		Data{30, 40},
-		Data{50, 60},
-		Data{70, 80},
+		{10, 20},
+		{30, 40},
+		{50, 60},
+		{70, 80},
 	}
 	count := len(data)
 	enc := json.NewEncoder(file)
