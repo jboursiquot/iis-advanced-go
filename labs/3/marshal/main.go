@@ -16,10 +16,10 @@ type Employee struct {
 
 func main() {
 	data := []Employee{
-		Employee{Name: "Bob Jones", Type: "Manager", Age: "55"},
-		Employee{Name: "Sally Wilson", Type: "Vice President", Age: "45", Insurance: "No"},
-		Employee{Name: "Sam Smith", Type: "Warehouse", Insurance: "Yes"},
-		Employee{Name: "Adam Freeman", Type: "Warehouse", Age: "34", Insurance: "Yes"},
+		{Name: "Bob Jones", Type: "Manager", Age: "55"},
+		{Name: "Sally Wilson", Type: "Vice President", Age: "45", Insurance: "No"},
+		{Name: "Sam Smith", Type: "Warehouse", Insurance: "Yes"},
+		{Name: "Adam Freeman", Type: "Warehouse", Age: "34", Insurance: "Yes"},
 	}
 
 	bs, err := json.Marshal(data)
