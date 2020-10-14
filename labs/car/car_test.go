@@ -3,7 +3,7 @@ package car_test
 import (
 	"testing"
 
-	car "github.com/jboursiquot/iis-advanced-go/labs/5-car"
+	car "github.com/jboursiquot/iis-advanced-go/labs/car"
 )
 
 func TestIncrease(t *testing.T) {
