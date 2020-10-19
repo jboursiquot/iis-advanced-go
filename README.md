@@ -1,5 +1,5 @@
 # iis-advanced-go
-Solutions
+Solutions and resources
 
 # Playground Links
 
@@ -53,7 +53,7 @@ Solutions
 - [Collections](https://play.golang.org/p/FKtRU6EFsK4)
 - [Enumerate Methods](https://play.golang.org/p/PV0pSroC658)
 - [Modifying Data](https://play.golang.org/p/mjnjQ4VWbVt)
-- ["Super Coo"l](https://play.golang.org/p/oSvEk8QzTTL)
+- ["Super Cool"](https://play.golang.org/p/oSvEk8QzTTL)
 
 ## C to Golang
 
