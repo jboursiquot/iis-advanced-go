@@ -30,8 +30,11 @@ Solutions
 
 ## Goroutines (Basics)
 
+- [GOMAXPROCS Example](https://play.golang.org/p/PH5WsGHlkfH)
+- [Your First Goroutine](https://play.golang.org/p/ZErDXqoYJXB)
 - [Goroutine - No Race](https://play.golang.org/p/bmqd1WP6Uwa)
 - [Channel Code](https://play.golang.org/p/B0E0EFuTpki)
+- [Unidirectional Channel](https://play.golang.org/p/YVnmpQitv0C)
 - [Select Statement Example](https://play.golang.org/p/NwS2UdAk-S1)
 - [Buffered Channel](https://play.golang.org/p/22q8CJOEeYp)
 
