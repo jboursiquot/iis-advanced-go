@@ -28,16 +28,8 @@ func (s *store) ledger() {
 func main() {
 	s := new(store)
 
-	lchan := make(chan struct{})
-
 	var wg sync.WaitGroup
 	wg.Add(4)
-
-	go func(ch <-chan struct{}, wg *sync.WaitGroup) {
-		<-ch
-		s.ledger()
-		wg.Done()
-	}(lchan, &wg)
 
 	go func() { s.shop("Bob", 1000); wg.Done() }()
 	go func() { s.shop("Ted", 2000); wg.Done() }()
@@ -45,6 +37,15 @@ func main() {
 	go func() { s.shop("Alice", 4000); wg.Done() }()
 
 	wg.Wait()
+
+	lchan := make(chan struct{})
+
+	go func(ch <-chan struct{}, wg *sync.WaitGroup) {
+		<-ch
+		s.ledger()
+		wg.Done()
+	}(lchan, &wg)
+
 	wg.Add(1)
 	lchan <- struct{}{}
 	wg.Wait()
